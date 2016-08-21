@@ -23,7 +23,7 @@
 #include <sys/socket.h>
 #include <sys/time.h>
 #include <sys/types.h>
-#include <netipx/ipx.h>
+#include <linux/ipx.h>
 #include <netinet/in.h>
 #include <errno.h>
 
@@ -36,6 +36,10 @@
 #include "coopth.h"
 #include "ipx.h"
 #ifdef IPX
+
+// https://www.winehq.org/pipermail/wine-devel/2014-June/104511.html
+#define SOL_IPX 256
+#define IPX_TYPE 1
 
 #define MAX_PACKET_DATA		1500
 
