@@ -20,6 +20,7 @@
 #endif
 
 #include <stdint.h>
+#include <fcntl.h>
 
 /* disk file types */
 typedef enum {
