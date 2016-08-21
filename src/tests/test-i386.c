@@ -24,7 +24,6 @@
  *  Running under $_cpu_emu="vm86", "full", and "fullsim" currently
  *  gives some small differences in the FPU emulator.
  */
-#define _GNU_SOURCE
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
