@@ -23,9 +23,11 @@
 #include <net/if.h>
 #include <netinet/in.h>
 #include <linux/if_tun.h>
+#if defined(__UCLIBC__) || defined(__GLIBC__)
 #include <netinet/if_ether.h>
-#include <netpacket/packet.h>
 #include <net/ethernet.h>
+#endif
+#include <netpacket/packet.h>
 #include <assert.h>
 
 #include "emu.h"
